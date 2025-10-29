@@ -5,21 +5,21 @@
 class Lanup < Formula
   desc "Automatically expose your local backend services on your local network"
   homepage "https://github.com/raucheacho/lanup"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/raucheacho/lanup/releases/download/v1.0.0/lanup_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "44e458f4281263d3c3c38662717945372bc0f6dd8543bc3ec8a1d152a5b5f885"
+      url "https://github.com/raucheacho/lanup/releases/download/v1.0.1/lanup_1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "eca6738b12c7b91997959d2cf0f58f25fe29d25cfdfeab151d34736251c9b03c"
 
       def install
         bin.install "lanup"
       end
     end
     on_arm do
-      url "https://github.com/raucheacho/lanup/releases/download/v1.0.0/lanup_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "685656b8c6aa9b4126cd75ffd43dcf4298e83164c7bf7a3265f55b014a411df9"
+      url "https://github.com/raucheacho/lanup/releases/download/v1.0.1/lanup_1.0.1_Darwin_arm64.tar.gz"
+      sha256 "6ce53ba414050139c22d9b2a854f3a1b7d9f81ed767784530b1c7ca8d2aef282"
 
       def install
         bin.install "lanup"
@@ -30,8 +30,8 @@ class Lanup < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raucheacho/lanup/releases/download/v1.0.0/lanup_1.0.0_Linux_x86_64.tar.gz"
-        sha256 "47dcd9bb5fb072a08653efda3f4dee4de0e209566ef972543ea015ad8b3a3815"
+        url "https://github.com/raucheacho/lanup/releases/download/v1.0.1/lanup_1.0.1_Linux_x86_64.tar.gz"
+        sha256 "6b89b6e6aa26b9c8c1da9d86dc891c6e48ee8e9451c9fed26ed4d94a8a394d98"
 
         def install
           bin.install "lanup"
@@ -40,8 +40,8 @@ class Lanup < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raucheacho/lanup/releases/download/v1.0.0/lanup_1.0.0_Linux_arm64.tar.gz"
-        sha256 "ca9cc72766591da00b764d95dcecb678cf962640dfaa92f5cb103a53b4a01a1e"
+        url "https://github.com/raucheacho/lanup/releases/download/v1.0.1/lanup_1.0.1_Linux_arm64.tar.gz"
+        sha256 "d86579bf30942f438df103bdaed20c6867e8557ce86c28eb4bd051cb1a4ea04d"
 
         def install
           bin.install "lanup"
