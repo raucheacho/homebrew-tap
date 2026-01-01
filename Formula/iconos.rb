@@ -5,21 +5,21 @@
 class Iconos < Formula
   desc "CLI tool to generate icons and favicons from a source image"
   homepage "https://github.com/raucheacho/iconos"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.2.0/iconos_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3632b7cc80349bbb51436484dddd574b259bf9c063960ff81fc598139e17eea3"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.3.0/iconos_0.3.0_darwin_amd64.tar.gz"
+      sha256 "c78fdb5af6fbe48fc499d07fe18ed0da6a3948d76ae10cf19b1e6ac52cc5f788"
 
       def install
         bin.install "iconos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.2.0/iconos_0.2.0_darwin_arm64.tar.gz"
-      sha256 "d1fb5860c00eb008bc5044016e25ab854e07e5de1b95409ba85a7e6c9c09066d"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.3.0/iconos_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9a7c3b7f84fdb90c7a47dea08e56aea372b55d0292256f97cd7c8b63a3577881"
 
       def install
         bin.install "iconos"
@@ -29,15 +29,15 @@ class Iconos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.2.0/iconos_0.2.0_linux_amd64.tar.gz"
-      sha256 "a9c9b10a5dc7d7756a3ec1cca689f1b180e2334852491fe1a5eef074b7a7338f"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.3.0/iconos_0.3.0_linux_amd64.tar.gz"
+      sha256 "3019a329aaf59b07f49a90d1630846583199371320777163eebbfef3212fdd67"
       def install
         bin.install "iconos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.2.0/iconos_0.2.0_linux_arm64.tar.gz"
-      sha256 "c58e369883252a6f56dc3e669bd39a30fb7e72030a86b3fc615c75e4ced89ff4"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.3.0/iconos_0.3.0_linux_arm64.tar.gz"
+      sha256 "6d4df9130bf4dbffb2c801cad495463e2761df5b4ea8e53677085e90328525f3"
       def install
         bin.install "iconos"
       end
