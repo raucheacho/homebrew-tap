@@ -5,21 +5,21 @@
 class Iconos < Formula
   desc "CLI tool to generate icons and favicons from a source image"
   homepage "https://github.com/raucheacho/iconos"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.3.2/iconos_0.3.2_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2f3b3939a84d4af85d97e3d6b3e0548c54bd098ac963b9888a2cb8754467b5c8"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.4.0/iconos_0.4.0_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f560cfadf37f26896afccb3b58f5f83355d186d4c4817b2a26c6a33c5bba5322"
 
       def install
         bin.install "iconos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.3.2/iconos_0.3.2_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "15c83a7508ae0c21c94f1d14a765b795c05f2da8380153114cf7faeda9444586"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.4.0/iconos_0.4.0_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "255608470b6498f1901200fc0d373f6ab0969d862014a11d16a8e57f86a674fe"
 
       def install
         bin.install "iconos"
@@ -29,15 +29,15 @@ class Iconos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.3.2/iconos_0.3.2_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "9b4350aaf48b13643ebb3b8800141e06172f05cc3eaf3a47f86dfb731089fa00"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.4.0/iconos_0.4.0_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0ea3424cd98fbe7d296d8309c88feb7cfa0196820fdfd920f7b2edbc95140f75"
       def install
         bin.install "iconos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/iconos/releases/download/v0.3.2/iconos_0.3.2_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5d778255ef35086434536a55e8d8f8cd62801b16c06e24a66227897aac63e395"
+      url "https://github.com/raucheacho/iconos/releases/download/v0.4.0/iconos_0.4.0_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "71be0ad0a9561d2af760251ab8da8c0bd8ae6c0299507fca84e6651736612f2a"
       def install
         bin.install "iconos"
       end
