@@ -5,21 +5,21 @@
 class Rosia < Formula
   desc "Clean development dependencies and caches"
   homepage "https://github.com/raucheacho/rosia-cli"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.3/rosia_0.2.3_darwin_amd64.tar.gz"
-      sha256 "f25c091f00874c6561f208f3363a283052871556d01dbfaacb801416527ecbf6"
+      url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.4/rosia_0.2.4_darwin_amd64.tar.gz"
+      sha256 "7f9b7b8476d60577b8768bc1f3a353c4c40b86a0967f4fc977499242819a178d"
 
       def install
         bin.install "rosia"
       end
     end
     on_arm do
-      url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.3/rosia_0.2.3_darwin_arm64.tar.gz"
-      sha256 "2d47bc08f4ad062e2a8e570b60f22906f2ef25328f4c2cf44cefea0e963a5150"
+      url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.4/rosia_0.2.4_darwin_arm64.tar.gz"
+      sha256 "7472898289a1e2f99878a7d2b9ea9a45d310bfbba3925952e54b58c7d644eff1"
 
       def install
         bin.install "rosia"
@@ -30,8 +30,8 @@ class Rosia < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.3/rosia_0.2.3_linux_amd64.tar.gz"
-        sha256 "93b91c7c28f70e557c06e9b96aab46ab4599122aadc56e737a4cce4e11b93dfc"
+        url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.4/rosia_0.2.4_linux_amd64.tar.gz"
+        sha256 "a2582cfe78ae3a3239fb0ce20d0bc0d1a91e8d95a877eb8e1ccc5e523ac0d2af"
 
         def install
           bin.install "rosia"
@@ -40,8 +40,8 @@ class Rosia < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.3/rosia_0.2.3_linux_arm64.tar.gz"
-        sha256 "937f967c213aa532da85cdb15241ebc6fb1c771fee9e0ea583baaa58ffb15be4"
+        url "https://github.com/raucheacho/rosia-cli/releases/download/v0.2.4/rosia_0.2.4_linux_arm64.tar.gz"
+        sha256 "72283db3a8525361dbd351dccb0aa6fcc38a88ebb0183be976e0d8081b0b09dd"
 
         def install
           bin.install "rosia"
