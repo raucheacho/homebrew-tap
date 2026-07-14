@@ -5,21 +5,21 @@
 class WotpCli < Formula
   desc "Self-hosted WhatsApp OTP provider CLI"
   homepage "https://github.com/raucheacho/wotp"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raucheacho/wotp/releases/download/v1.0.3/wotp-cli_1.0.3_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "22306081950dd8aa4a8dcf906a2f944545a6b97a963c4b975d61c1d6a376986f"
+      url "https://github.com/raucheacho/wotp/releases/download/v1.0.4/wotp-cli_1.0.4_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "58327768a4f528e63be76ce1f70d0fc9142199c17b8017a0d09da7838f7e0fb7"
 
       define_method(:install) do
         bin.install "wotp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raucheacho/wotp/releases/download/v1.0.3/wotp-cli_1.0.3_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "27438a145719c66ef0141e73a2d4984d06f32fef8a2d17cd0fea8cb4c52b561e"
+      url "https://github.com/raucheacho/wotp/releases/download/v1.0.4/wotp-cli_1.0.4_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "3308d27ab8d103dde746ddec0236a59cf7b14dcd0d2f70a83e8f8e33d684a256"
 
       define_method(:install) do
         bin.install "wotp"
@@ -29,15 +29,15 @@ class WotpCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/wotp/releases/download/v1.0.3/wotp-cli_1.0.3_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c64aa769c28dd3e81a499769c5aa1325bbf5d815787fae74499c49a702cf59cc"
+      url "https://github.com/raucheacho/wotp/releases/download/v1.0.4/wotp-cli_1.0.4_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "db8db06f50a1a5c5db1fc0174b35eb4e11526378d69de637dfc0d0732c45b44c"
       define_method(:install) do
         bin.install "wotp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raucheacho/wotp/releases/download/v1.0.3/wotp-cli_1.0.3_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5dd9e508c63bd40f143e829f1a3ee6f1fbcabd515b483a3564cd16a39b0225e7"
+      url "https://github.com/raucheacho/wotp/releases/download/v1.0.4/wotp-cli_1.0.4_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "e8df001275c946f20695006a2b2d6d5364080acf7a6ed7f65d29a8bc02713b0e"
       define_method(:install) do
         bin.install "wotp"
       end
