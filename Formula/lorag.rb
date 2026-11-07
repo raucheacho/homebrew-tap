@@ -7,7 +7,7 @@ class Lorag < Formula
   depends_on "ffmpeg"
   depends_on "poppler"
   depends_on "tesseract"
-  depends_on "whisper-cpp"
+  depends_on "whisper.cpp"
 
   on_macos do
     on_arm do
