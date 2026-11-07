@@ -1,7 +1,6 @@
 class Lorag < Formula
   desc "Local memory and search for AI agents, over MCP"
   homepage "https://github.com/raucheacho/lorag"
-  version "0.1.0"
   license "MIT"
 
   on_macos do
