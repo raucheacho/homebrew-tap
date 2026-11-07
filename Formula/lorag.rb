@@ -1,0 +1,60 @@
+class Lorag < Formula
+  desc "Local memory and search for AI agents, over MCP"
+  homepage "https://github.com/raucheacho/lorag"
+  version "0.1.0"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.0/lorag_0.1.0_darwin_arm64.tar.gz"
+      sha256 "fcf3815ef9e33c0ea75329af3f47e78d29718d3567685ec9af0cac280254f73d"
+    end
+    on_intel do
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.0/lorag_0.1.0_darwin_amd64.tar.gz"
+      sha256 "4ab5c7d3a598b0bf9aead93f7fb9042b61e8c97353bdbb86cc43842f379b9f70"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.0/lorag_0.1.0_linux_arm64.tar.gz"
+      sha256 "03770a135ee0d39674ac856273fb21e737d84aec0901327e27815eed4073388d"
+    end
+    on_intel do
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.0/lorag_0.1.0_linux_amd64.tar.gz"
+      sha256 "8b637b875a289e4bfe12103477065fe6c50e8738b8410c468817107efaefc0ba"
+    end
+  end
+
+  def install
+    bin.install "lorag", "loragctl"
+    prefix.install_metafiles
+    prefix.install "LICENSE.vectixdb", "NOTICE.vectixdb"
+  end
+
+  service do
+    run [opt_bin/"lorag", "server"]
+    keep_alive true
+    # pdftotext, ffmpeg, whisper-cli and tesseract are found on this PATH.
+    environment_variables PATH: std_service_path_env
+    log_path var/"log/lorag.log"
+    error_log_path var/"log/lorag.log"
+  end
+
+  def caveats
+    <<~TEXT
+      Lorag needs Ollama for embeddings (https://ollama.com):
+        ollama pull bge-m3
+
+      Optional, for PDF pages, audio, video and OCR:
+        brew install poppler ffmpeg whisper-cpp tesseract
+
+      Data is stored in ~/.lorag/data. The Studio is on http://localhost:8080.
+    TEXT
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/lorag version")
+    assert_match version.to_s, shell_output("#{bin}/loragctl version")
+  end
+end
