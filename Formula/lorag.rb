@@ -11,23 +11,23 @@ class Lorag < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.3/lorag_0.1.3_darwin_arm64.tar.gz"
-      sha256 "97894814424e3d348765b29355fe6dac48f18f1e669ae2f73918b50b14b9ef61"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.4/lorag_0.1.4_darwin_arm64.tar.gz"
+      sha256 "13a83e7f387d962cfe93e1a0f7f7788f68e44f92d26c936483df3b2fcafb0f83"
     end
     on_intel do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.3/lorag_0.1.3_darwin_amd64.tar.gz"
-      sha256 "6e5ca5509b49129cbc20c53d8aa560731fd2b93af8c178d20641849b84116d38"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.4/lorag_0.1.4_darwin_amd64.tar.gz"
+      sha256 "c213a61e89e35b5d3174b55338a8ea8671265b5329cb4570f7e956f928c5333e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.3/lorag_0.1.3_linux_arm64.tar.gz"
-      sha256 "7e927d9138f65b0c4c4875470626e16e416ef574c5a6d63a12a57f8b6debe017"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.4/lorag_0.1.4_linux_arm64.tar.gz"
+      sha256 "7b1c13f04d655db36baf157cda20078f9d4b4a10e8b8f9e5caadfb9bc2904b4c"
     end
     on_intel do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.3/lorag_0.1.3_linux_amd64.tar.gz"
-      sha256 "d78f91e7bc432a57b090e3a131ab0580f5a9b7449bc108fa2e961c5dd7042c13"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.4/lorag_0.1.4_linux_amd64.tar.gz"
+      sha256 "5ec42d09e8759f015a5ddd970e74a507f1049f6ebb49f235746c373520a1ef37"
     end
   end
 
