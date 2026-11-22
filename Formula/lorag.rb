@@ -11,23 +11,23 @@ class Lorag < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.7/lorag_0.1.7_darwin_arm64.tar.gz"
-      sha256 "f4a14ffa1fb0ba9852ed7370d141152aafe760f47620021c6d7d05c8c3b5c889"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.8/lorag_0.1.8_darwin_arm64.tar.gz"
+      sha256 "011568d3cc1255f9a0e156fa7a5ece30f1092c0635aecc928cf3316d6699f67c"
     end
     on_intel do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.7/lorag_0.1.7_darwin_amd64.tar.gz"
-      sha256 "55bd220b95675db665e43447e28b024378240218bf1e0f21d846052915fd0ea7"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.8/lorag_0.1.8_darwin_amd64.tar.gz"
+      sha256 "f2175cc0140ca818abed9eca2e577de883e75e405155832601a8f366c34c743f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.7/lorag_0.1.7_linux_arm64.tar.gz"
-      sha256 "fba279f02186b3c3f443fef0ebfeb8c1ce0f9e4aef2e4aa574e828599024390c"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.8/lorag_0.1.8_linux_arm64.tar.gz"
+      sha256 "09817370f9362e7dd28ef26cc535505ff333120184373e4e36ce25a846883f52"
     end
     on_intel do
-      url "https://github.com/raucheacho/lorag/releases/download/v0.1.7/lorag_0.1.7_linux_amd64.tar.gz"
-      sha256 "9d9f3ae55c3ad90c5a5635c042eb59225ba1a4977ee58db6d0bbfdbfad672266"
+      url "https://github.com/raucheacho/lorag/releases/download/v0.1.8/lorag_0.1.8_linux_amd64.tar.gz"
+      sha256 "cd42e3d191c07957ce3b21d387374e1ba2df8ee515a2df586a8a465519b36413"
     end
   end
 
@@ -52,7 +52,7 @@ class Lorag < Formula
       Lorag needs Ollama for embeddings (https://ollama.com):
         ollama pull bge-m3
 
-      Data is stored in ~/.lorag/data. The Studio is on http://localhost:8080:
+      Data is stored in ~/.lorag/data. The Studio is on http://localhost:7411:
         lorag open
     TEXT
   end
